@@ -1,0 +1,26 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Checkout extends Model
+{
+    use HasFactory;
+
+        //    protected $table = 'reservations';
+
+    // protected $primaryKey = 'reservation_id';
+
+
+    //  protected $fillable = [
+    //     'user_id',
+    //     'name',
+    //     'email',
+    //     'phone',
+    //     'number_of_people',
+    //     'reservation_date',
+    //     'reservation_time',
+    // ];
+}
