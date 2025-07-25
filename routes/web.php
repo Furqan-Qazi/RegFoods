@@ -201,7 +201,7 @@ Route::resource('contacts', ContactController::class); // plural
 Route::get('/category-form',[CategorieController::class,'categorie_form_show'])->name('category-form');
 Route::resource('/category-submit',CategorieController::class);
 
-// ✅ Admin category routes
+//  Admin category routes
 Route::get('admin/all-category', [CategoryController::class, 'index'])->name('admin.all_category');
 Route::get('/admin/categories/edit/{id}', [CategoryController::class, 'edit'])->name('admin.categories.edit');
 Route::put('/admin/categories/update/{id}', [CategoryController::class, 'update'])->name('admin.categories.update');
@@ -259,7 +259,7 @@ Route::post('/login', [AuthenticatedSessionController::class, 'store'])->name('l
 //     ->name('admin_dashboard');
 Route::get('/admin/dashboard', [UserController::class, 'index'])
     ->middleware(['auth'])
-    ->name('admin.dashboard'); // ✅ change this line
+    ->name('admin.dashboard'); //  change this line
 
 Route::get('admin/all_users',[UserController::class,'all_user'])->name('all_users');
 Route::get('admin/users/edit/{id}', [UserController::class, 'edit_user']);
@@ -281,7 +281,7 @@ Route::get('/admin/all-blogs', [UserController::class, 'allBlogs'])->name('admin
 // Route::get('admin/blogs/edit/{id}', [BlogController::class, 'edit'])->name('admin.blogs.edit');
 // Route::post('admin/blogs/update/{id}', [BlogController::class, 'update'])->name('admin.blogs.update');
 // Route::delete('admin/blogs/delete/{id}', [BlogController::class, 'destroy'])->name('admin.blogs.destroy');
-// ✅ Admin blog routes
+//  Admin blog routes
 Route::get('admin/blogs/edit/{id}', [AdminBlogController::class, 'edit'])->name('admin.blogs.edit');
 Route::post('admin/blogs/update/{id}', [AdminBlogController::class, 'update'])->name('admin.blogs.update');
 Route::delete('admin/blogs/delete/{id}', [AdminBlogController::class, 'destroy'])->name('admin.blogs.destroy');

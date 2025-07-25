@@ -1,5 +1,3 @@
-
-
 <?php if (isset($component)) { $__componentOriginal9ac128a9029c0e4701924bd2d73d7f54 = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginal9ac128a9029c0e4701924bd2d73d7f54 = $attributes; } ?>
 <?php $component = App\View\Components\AppLayout::resolve([] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
@@ -13,7 +11,7 @@
     <!--=============================
         BREADCRUMB START
     ==============================-->
-    <section class="page_breadcrumb" style="background: url(images/chefs_all.jpg);">
+    <section class="page_breadcrumb" style="background: url('<?php echo e(asset('images/chefs_all.jpg')); ?>');">
         <div class="breadcrumb_overlay">
             <div class="container">
                 <div class="breadcrumb_text">
@@ -101,7 +99,4 @@
 <?php $component = $__componentOriginal9ac128a9029c0e4701924bd2d73d7f54; ?>
 <?php unset($__componentOriginal9ac128a9029c0e4701924bd2d73d7f54); ?>
 <?php endif; ?>
-
-
-
 <?php /**PATH C:\xampp\htdocs\laravel\resturant\resources\views/chefs.blade.php ENDPATH**/ ?>
